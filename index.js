@@ -32,6 +32,10 @@ const searchInput = document.querySelector('.input')
 
 const clearButton = document.getElementById('clear')
 
+const searchButton = document.getElementById('search')
+
+const results = document.getElementById('results')
+
 // Did you add a function for addEventListener that may be the problem 
 clearButton.addEventListener("click", () => {
     // 1. write a function that removes any previous results from the page
