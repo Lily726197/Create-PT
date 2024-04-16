@@ -42,6 +42,10 @@ clearButton.addEventListener("click", () => {
     clearList()
 })
 
+searchButton.addEventListener("click", () =>{
+    eachGame()
+})
+
 function clearList(){
     // looping through each child of the search results list and remove each child
     while (list.firstChild){
