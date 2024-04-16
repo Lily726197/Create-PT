@@ -30,7 +30,13 @@ const games = [
 
 const searchInput = document.querySelector('.input')
 
+const searchButton = document.getElementById('results')
+
 const clearButton = document.getElementById('clear')
+
+searchButton.addEventListener('click', () => {
+    setList(results)
+})
 
 // Did you add a function for addEventListener that may be the problem 
 clearButton.addEventListener("click", () => {
