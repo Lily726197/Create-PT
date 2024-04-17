@@ -43,7 +43,7 @@ clearButton.addEventListener("click", () => {
 })
 
 searchButton.addEventListener("click", () =>{
-    eachGame()
+    setList(results)
 })
 
 function clearList(){
