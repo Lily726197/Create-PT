@@ -18,92 +18,33 @@ function loadSearchData(){
     ]
 }
 
-
-const searchInput = document.querySelector('.input')
-
-const clearButton = document.getElementById('clear')
-
-const searchButton = document.getElementById('search')
-
-const results = document.getElementById('results')
-
-// Did you add a function for addEventListener that may be the problem 
-clearButton.addEventListener("click", () => {
-    // 1. write a function that removes any previous results from the page
-    clearList()
+// Get the HTML element of the list
+let list = document.getElementById('list');
+// Add each data item as an <a> tag
+games.forEach((game)=>{
+    let a = document.createElement("a");
+    a.innerText = game;
+    a.classList.add("listItem");
+    list.appendChild(a);
 })
 
-searchButton.addEventListener("click", () =>{
-    setList(results)
-})
-
-function clearList(){
-    // looping through each child of the search results list and remove each child
-    while (list.firstChild){
-        list.removeChild(list.firstChild)
-    }
-}
-
-searchInput.addEventListener("input", (e) => {
-    // inside, we will need to achieve a few things:
-    // 1. declare and assign the value of the event's target to a variable AKA whatever is typed in the search bar
-    let value = e.target.value
-
-    // 2. check: if input exists and if input is larger than 0
-    if (value && value.trim().length > 0){
-        // 3. redefine 'value' to exclude white space and change input to all lowercase
-         value = value.trim().toLowerCase()
-        // 4. return the results only if the value of the search is included in the game's name
-        // we need to write code (a function for filtering through our data to include the search input value)
-        setList(games.filter(game => {
-            return game.name.includes(value)
-        }))
-    } else {
-        // 5. return nothing
-        // input is invalid -- show an error message or show no results
-        clearList()
-    }
-
-})
-
-function noResults(){
-    // create an element for the error; a list item ("li")
-    const error = document.createElement('li')
-    // adding a class name of "error-message" to our error element
-    error.classList.add('error-message')
-
-    // creating text for our element
-    const text = document.createTextNode('No results found. Sorry!')
-    // appending the text to our element
-    error.appendChild(text)
-    // appending the error to our list element
-    list.appendChild(error)
-}
-
-// creating and declaring a function called "setList"
-// setList takes in a param of "results"
-function setList(results){
-    clearList()
-    for (const game of results){
-        // creating a li element for each result item
-        const resultItem = document.createElement('li')
-
-        // adding a class to each item of the results
-        resultItem.classList.add('result-item')
-
-        // grabbing the name of the current point of the loop and adding the name as the list item's text
-        const text = document.createTextNode(game.name)
-
-        // appending the text to the result item
-        resultItem.appendChild(text)
-
-        // appending the result item to the list
-        list.appendChild(resultItem)
-    }
-    
-    if (results.length === 0 ){
-        noResults()
-    }
+function search() {
+    // search functionality goes here
+    let listContainer = document.getElementById('list');
+    let listItems = document.getElementsByClassName('listItem');
+    let input = document.getElementById('searchbar').value
+    input = input.toLowerCase(); 
+    let noResults = true;
+    for (i = 0; i < listItems.length; i++) { 
+        if (!listItems[i].innerHTML.toLowerCase().includes(input) || input === "") {
+            listItems[i].style.display="none";
+            continue;
+        }
+        else {
+            listItems[i].style.display="flex";
+            noResults = false; 
+        }
+    } listContainer.style.display = noResults ? "none" : "block";
 }
 
 function eachGame(){

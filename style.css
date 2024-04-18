@@ -1,0 +1,15 @@
+#list {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    display: none;
+ }
+ .listItem {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 5px 20px;
+    color: black;
+ }
+ .listItem:hover {
+    background-color: lightgrey;
+ }
