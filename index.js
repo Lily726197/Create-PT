@@ -1,32 +1,23 @@
 //Lily Lyons: Search bar
 //Jasmin: Figure out what's wrong with the page (work on some of the other coding first)
-const games = [
-    {name: 'Resident Evil'},
-    {name: 'Resident Evil 2'},
-    {name: 'Resident Evil 3: Nemesis'},
-    {name: 'Resident Evil Survivor'},
-    {name: 'Resident Evil - Code: Veronica'},
-    {name: 'Resident Evil Gaiden'},
-    {name: 'Resident Evil Zero'},
-    {name: 'Resident Evil: Dead Aim'},
-    {name: 'Resident Evil Outbreak'},
-    {name: 'Resident Evil Outbreak: File #2'},
-    {name: 'Resident Evil 4'},
-    {name: 'Resident Evil: Deadly Silence'},
-    {name: 'Resident Evil: The Umbrella Chronicles'},
-    {name: 'Resident Evil 5'},
-    {name: 'Resident Evil: The Darkside Chronicles'},
-    {name: 'Resident Evil: The Mercenaries 3D'},
-    {name: 'Resident Evil: Revelations'},
-    {name: 'Resident Evil: Operation Raccoon City'},
-    {name: 'Resident Evil 6'},
-    {name: 'Resident Evil: Revelations 2'},
-    {name: 'Umbrella Corps'},
-    {name: 'Resident Evil 7: Biohazard'},
-    {name: 'Resident Evil: Resistance'},
-    {name: 'Resident Evil Village'},
-    {name: 'Resident Evil Re:Verse'},
-]
+function loadSearchData({
+    const games = [
+        {name: 'Resident Evil'},
+        {name: 'Resident Evil 2'},
+        {name: 'Resident Evil 3: Nemesis'},
+        {name: 'Resident Evil - Code: Veronica'},
+        {name: 'Resident Evil Zero'},
+        {name: 'Resident Evil 4'},
+        {name: 'Resident Evil 5'},
+        {name: 'Resident Evil: Revelations'},
+        {name: 'Resident Evil 6'},
+        {name: 'Resident Evil: Revelations 2'},
+        {name: 'Resident Evil 7: Biohazard'},
+        {name: 'Resident Evil Village'},
+        {name: 'Shadows of Rose DLC'},
+    ]
+})
+
 
 const searchInput = document.querySelector('.input')
 
@@ -138,6 +129,8 @@ function eachGame(){
         println("With Resident Evil 7: Biohazard Capcom reinvented the franchise in several ways: It's RE's return to mass acclaim and fandom following the largely disappointing fifth and sixth entries, it introduces a new protagonist in Ethan Winters, and most notably it switches the series' longrunning perspective from third-person to first-person. Despite all these changes, RE 7 still exists on the series canonical timeline, presumably taking place in the modern-day sometime after RE 6. The game is set in rural Louisiana, with the first part taking place in the home of the wonderfully insane Baker family. Its ties to past RE games are rather loose, though many of the series staples are here: clandestine human experimentation, bioweapons, and toward the end, a familiar face.")
     if(game.name = "Resident Evil Village"){
         println("Resident Evil Village is a continuation (and the conclusion) of Ethan Winters's story, set three years after the events of RE 7. Biohazard and Village stand on their own as a duology of games. Though Village includes a few more ties to the series' past, including a more prominent role for the aforementioned familiar face and further information about the origins of Umbrella. A post-credits scene extends the timeline even further. We'll save the details, but those curious can read on to the next section for a bit more context.")
+    if(game.name = "Resident Evil Zero"){
+        println(" released Nov. 12 2002 and created by Seiko Kobuchi, Capcom, Tose, Capcom Production Studio 4, Flagship, Capcom Production Studio 3 Description- Resident Evil 0 is the fifth game released in the series but the first chronologically. It takes place just before the events of Resident Evil, with Special Tactics and Rescue Service (S.T.A.R.S.) medic Rebecca Chambers and former marine Billy Coen discover a train full of zombies in the Arklay Mountains (home to the Spencer Mansion). Billy and Rebecca uncover valuable information related to series villains Albert Wesker and William Birkin. We also learn more about the origins of the sinister Umbrella Corporation and its deadly T-Virus. The game wraps with Rebecca headed toward the mansion, where she'd serve as a supporting character in RE 1.");
                                         }
                                     }
                                 }
@@ -148,4 +141,5 @@ function eachGame(){
             }
         }
     }
+}
 }
