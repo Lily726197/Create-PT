@@ -1,20 +1,23 @@
 //Lily Lyons: Search bar
 //Jasmin: Figure out what's wrong with the page (work on some of the other coding first)
-const games = [
-    {name: 'Resident Evil'},
-    {name: 'Resident Evil 2'},
-    {name: 'Resident Evil 3: Nemesis'},
-    {name: 'Resident Evil - Code: Veronica'},
-    {name: 'Resident Evil Zero'},
-    {name: 'Resident Evil 4'},
-    {name: 'Resident Evil 5'},
-    {name: 'Resident Evil: Revelations'},
-    {name: 'Resident Evil 6'},
-    {name: 'Resident Evil: Revelations 2'},
-    {name: 'Resident Evil 7: Biohazard'},
-    {name: 'Resident Evil Village'},
-    {name: 'Shadows of Rose DLC'},
-]
+function loadSearchData({
+    const games = [
+        {name: 'Resident Evil'},
+        {name: 'Resident Evil 2'},
+        {name: 'Resident Evil 3: Nemesis'},
+        {name: 'Resident Evil - Code: Veronica'},
+        {name: 'Resident Evil Zero'},
+        {name: 'Resident Evil 4'},
+        {name: 'Resident Evil 5'},
+        {name: 'Resident Evil: Revelations'},
+        {name: 'Resident Evil 6'},
+        {name: 'Resident Evil: Revelations 2'},
+        {name: 'Resident Evil 7: Biohazard'},
+        {name: 'Resident Evil Village'},
+        {name: 'Shadows of Rose DLC'},
+    ]
+})
+
 
 const searchInput = document.querySelector('.input')
 
