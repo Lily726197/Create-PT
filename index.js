@@ -47,4 +47,6 @@ function search() {
     } listContainer.style.display = noResults ? "none" : "block";
 }
 
-function game 
+function eachGame(){
+
+}
