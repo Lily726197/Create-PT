@@ -47,6 +47,13 @@ function search() {
     } listContainer.style.display = noResults ? "none" : "block";
 }
 
+function eachGame(){
+
+}
+
+
+
+
 // This function is supposed to show the description of the game 
 // that we search by name
 //Need to tell the webpage what to display
@@ -54,4 +61,3 @@ function game(){
     if(search = loadSearchData){
         println(" released Nov. 12 2002 and created by Seiko Kobuchi, Capcom, Tose, Capcom Production Studio 4, Flagship, Capcom Production Studio 3 Description- Resident Evil 0 is the fifth game released in the series but the first chronologically. It takes place just before the events of Resident Evil, with Special Tactics and Rescue Service (S.T.A.R.S.) medic Rebecca Chambers and former marine Billy Coen discover a train full of zombies in the Arklay Mountains (home to the Spencer Mansion). Billy and Rebecca uncover valuable information related to series villains Albert Wesker and William Birkin. We also learn more about the origins of the sinister Umbrella Corporation and its deadly T-Virus. The game wraps with Rebecca headed toward the mansion, where she’d serve as a supporting character in RE 1.");
     }
-}
