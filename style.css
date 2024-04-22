@@ -12,11 +12,12 @@ body {
     flex-direction: column;
     line-height: 2rem;
     font-size: 1.2em;
-    color: #ff2626;
+    color: #7a0c0c;
   }
   #searchbar {
      padding: 15px;
      border-radius: 5px;
+     border-color:#ff2626;
   }
   input[type=text] {
      -webkit-transition: width 0.15s ease-in-out;
