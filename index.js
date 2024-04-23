@@ -47,13 +47,6 @@ function search() {
     } listContainer.style.display = noResults ? "none" : "block";
 }
 
-function eachGame(){
-
-}
-
-
-
-
 // This function is supposed to show the description of the game 
 // that we search by name
 //Need to tell the webpage what to display
