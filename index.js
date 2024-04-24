@@ -48,7 +48,7 @@ function search() {
 }
 
 // This function is supposed to show the description of the game 
-/
+
 //fix th
 function game(){
     if(search = ("Resident Evil Zero")){
@@ -90,4 +90,3 @@ function game(){
             }
         }
     }
-                                                    
