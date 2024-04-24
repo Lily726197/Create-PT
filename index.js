@@ -52,7 +52,7 @@ function search() {
 
 
 // This function is supposed to show the description of the game 
-//Tell the web page what we want it to display
+//Tell the web page what we want it to display (Need a start function possibly)
 //fix the game names into strings
 function game(){
     if(search = ("Resident Evil Zero")){
