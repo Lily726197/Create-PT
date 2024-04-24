@@ -47,6 +47,14 @@ function search() {
     } listContainer.style.display = noResults ? "none" : "block";
 }
 
+
+=======
+
+//fix th
+>>>>>>> 55763914df083fa0e36f6fd998fb8b3af76beb84
+
+
+
 // This function is supposed to show the description of the game 
 //Tell the web page what we want it to display
 //fix the game names into strings
@@ -90,4 +98,4 @@ function game(){
             }
         }
     }
-                                                    
+}
