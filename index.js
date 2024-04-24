@@ -48,10 +48,6 @@ function search() {
 }
 
 
-=======
-
-//fix th
->>>>>>> 55763914df083fa0e36f6fd998fb8b3af76beb84
 
 
 
