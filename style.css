@@ -23,7 +23,7 @@ body {
      transition: width 0.15s ease-in-out;
   }
   #list {
-    border: 1px solid lightgrey;
+    border: 5px solid #ff2626;
     border-radius: 5px;
     display: none;
  }
@@ -35,5 +35,5 @@ body {
     color: black;
  }
  .listItem:hover {
-    background-color: lightgrey;
+    background-color: rgb(197, 110, 110);
  }
