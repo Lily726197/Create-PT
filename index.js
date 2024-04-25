@@ -49,7 +49,7 @@ function search() {
 
 
 function gameToString (game) {
-    return games.entries(game).reduce((str, [p, val]) => {
+    return game.entries(game).reduce((str, [p, val]) => {
         return `${str}${p}::${val}\n`;
     }, '');
 }
