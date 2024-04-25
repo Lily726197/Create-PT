@@ -1,5 +1,12 @@
 //Lily Lyons: Search bar
 //Jasmin: Figure out what's wrong with the page (work on some of the other coding first)
+function start(){
+    loadSearchData;
+    gameToString;
+    search;
+    game;
+}
+
 function loadSearchData(){
     const games = [
         'Resident Evil',
@@ -16,17 +23,18 @@ function loadSearchData(){
         'Resident Evil Village',
         'Shadows of Rose DLC',
     ]
+    // Get the HTML element of the list
+    let list = document.getElementById('list');
+    // Add each data item as an <a> tag
+    games.forEach((game)=>{
+        let a = document.createElement("a");
+        a.innerText = game;
+        a.classList.add("listItem");
+        list.appendChild(a);
+    })
 }
 
-// Get the HTML element of the list
-let list = document.getElementById('list');
-// Add each data item as an <a> tag
-games.forEach((game)=>{
-    let a = document.createElement("a");
-    a.innerText = game;
-    a.classList.add("listItem");
-    list.appendChild(a);
-})
+
 
 function search() {
     // search functionality goes here
