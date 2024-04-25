@@ -63,9 +63,7 @@ function gameToString (game) {
 
 
 // This function is supposed to show the description of the game 
-//Tell the web page what we want it to display (Need a start function possibly)
-//fix the game names into strings
-//Maybe an enter button
+//Tell the web page what we want it to display 
 function game(){
     gameToString;
     if(search = ("Resident Evil Zero")){
