@@ -1,7 +1,7 @@
 //Lily Lyons: Search bar
 //Jasmin: Figure out what's wrong with the page (work on some of the other coding first)
 function loadSearchData(){
-    let games = [
+    const games = [
         'Resident Evil',
         'Resident Evil 2',
         'Resident Evil 3: Nemesis',
