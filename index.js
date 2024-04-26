@@ -30,6 +30,7 @@ function loadSearchData(){
         a.innerText = game;
         a.classList.add("listItem");
         list.appendChild(a);
+        a.href = "game.html";
     })
 }
 
